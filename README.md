@@ -9,6 +9,7 @@ _《逃离鸭科夫》的 mod 示例说明。_
 ## 工作原理概述
 
 《逃离鸭科夫》的 Mod 系统会自动扫描并读取 Duckov_Data/Mods 文件夹，以及从 Steam 创意工坊中订阅的物品文件夹。当扫描发现这些文件夹中包含有特定的 dll 文件、info.ini 和 preview.png 文件，那么就能够在游戏的 Mods 菜单中管理并加载 mod。
+注意：mac系统的相关文件夹位于 Duckov/Duckov.app/**Contents/Mods/**。
 
 ### 规则一
 游戏会读取 mod 文件夹的 info.ini 中的 **name** 参数，并以此作为 namespace 尝试加载名为 ModBehaviour 的类。例如，info.ini 中存放有`name=MyMod`，则会加载`MyMod.dll`文件中的`MyMod.ModBehaviour`。
