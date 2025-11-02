@@ -2,9 +2,9 @@
 
 _This is an example project for modding Escape From Duckov._
 
-中文 | [English](README_EN.md)
+中文 | [English](README_EN.md) | [한국어](README_KO.md)
 
-[值得注意的API](Documents/NotableAPIs_CN.md)
+[值得注意的 API](Documents/NotableAPIs_CN.md)
 
 ## 工作原理概述 / Overview
 
@@ -40,16 +40,17 @@ info.ini 还可能包含以下参数:
 
 **注意：在上传 Steam Workshop 的时候，会复写 info.ini。info.ini 中原有的信息可能会因此丢失。所以不建议在 info.ini 中存储除以上项目之外的其他信息。**
 
-
 ## 配置 C# 工程 / Configuring C# Project
 
 1. 在电脑上准备好《逃离鸭科夫》本体。
 2. 创建一个 .Net Class Library 工程。
 3. 配置工程参数。
+
    1. Target Framework
       - **TargetFramework 建议设置为 netstandard2.1。**
       - 注意删除 TargetFramework 不支持的功能，比如`<ImplicitUsings>`
    2. Reference Include
+
       - 将《逃离鸭科夫》的`\Duckov_Data\Managed\*.dll`添加到引用中。
       - 例：
 
@@ -58,7 +59,7 @@ info.ini 还可能包含以下参数:
           <Reference Include="$(DuckovPath)\Duckov_Data\Managed\TeamSoda.*" />
           <Reference Include="$(DuckovPath)\Duckov_Data\Managed\ItemStatsSystem.dll" />
           <Reference Include="$(DuckovPath)\Duckov_Data\Managed\Unity*" />
-        </ItemGroup> 
+        </ItemGroup>
       ```
 
 4. 完成！现在在你 Mod 的 Namespace 中编写一个 ModBehaivour 的类。构建工程，即可得到你的 mod 的主要 dll。
@@ -85,10 +86,5 @@ csproj 文件示例: [DisplayItemValue.csproj](DisplayItemValue/DisplayItemValue
 
 ## 鸭科夫社区准则
 
-为了鸭科夫社区的长期健康与和谐发展，我们需要共同维护良好的创作环境。 因此，我们希望大家遵守以下规则：
-1.禁止违反开发组以及 Steam 平台所在地区法律的内容，包括但不限于涉及政治、儿童色情、宣扬暴力恐怖等内容。
-2.禁止严重侮辱角色或者扭曲剧情、意图在玩家社群内容引起反感和制造对立的内容，或者涉及到热门时事与现实人物等容易引发现实争议的内容。
-3.禁止未经授权，使用受版权保护的游戏资源或其他第三方素材的内容。
-4.禁止利用 Mod 引导至广告、募捐等商业或非官方性质的外部链接，或引导他人付费的行为。
-5.使用AI内容的 Mod 需要标注。
-对于在Steam创意工坊发布的 Mod，如果违反上述规则，我们可能会在不事先通知的情况下直接删除，并可能封禁相关创作者的权限。
+为了鸭科夫社区的长期健康与和谐发展，我们需要共同维护良好的创作环境。 因此，我们希望大家遵守以下规则： 1.禁止违反开发组以及 Steam 平台所在地区法律的内容，包括但不限于涉及政治、儿童色情、宣扬暴力恐怖等内容。 2.禁止严重侮辱角色或者扭曲剧情、意图在玩家社群内容引起反感和制造对立的内容，或者涉及到热门时事与现实人物等容易引发现实争议的内容。 3.禁止未经授权，使用受版权保护的游戏资源或其他第三方素材的内容。 4.禁止利用 Mod 引导至广告、募捐等商业或非官方性质的外部链接，或引导他人付费的行为。 5.使用 AI 内容的 Mod 需要标注。
+对于在 Steam 创意工坊发布的 Mod，如果违反上述规则，我们可能会在不事先通知的情况下直接删除，并可能封禁相关创作者的权限。
