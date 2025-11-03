@@ -2,9 +2,9 @@
 
 _《逃离鸭科夫》的 mod 示例说明。_
 
-中文 | [English](README_EN.md)
+中文 | [English](README_EN.md) | [한국어](README_KO.md)
 
-[值得注意的API](Documents/NotableAPIs_CN.md)
+[值得注意的 API](Documents/NotableAPIs_CN.md)
 
 ## 工作原理概述
 
@@ -42,7 +42,9 @@ mod 的 ModBehaviour 类应继承自 **Duckov.Modding.ModBehaviour**，这是一
 在上传 Steam Workshop 的时候，info.ini 会被复写，配置文件中原有的信息可能会因此丢失。所以，**不建议在 info.ini 中记录除以上参数之外的其他数据**。
 
 
-## 配置 C# 工程
+**注意：在上传 Steam Workshop 的时候，会复写 info.ini。info.ini 中原有的信息可能会因此丢失。所以不建议在 info.ini 中存储除以上项目之外的其他信息。**
+
+## 配置 C# 工程 / Configuring C# Project
 
 1. 在电脑上准备好《逃离鸭科夫》本体。
 2. 通过 Visual Studio 软件创建一个 .Net 类库（Class Library）。
@@ -59,7 +61,7 @@ mod 的 ModBehaviour 类应继承自 **Duckov.Modding.ModBehaviour**，这是一
           <Reference Include="$(DuckovPath)\Duckov_Data\Managed\TeamSoda.*" />
           <Reference Include="$(DuckovPath)\Duckov_Data\Managed\ItemStatsSystem.dll" />
           <Reference Include="$(DuckovPath)\Duckov_Data\Managed\Unity*" />
-        </ItemGroup> 
+        </ItemGroup>
       ```
 
 4. 工程配置完成！现在在你 Mod 工程的 Namespace 中编写一个 ModBehaivour 的类。
@@ -67,7 +69,8 @@ mod 的 ModBehaviour 类应继承自 **Duckov.Modding.ModBehaviour**，这是一
 
 [csproj 文件示例](DisplayItemValue/DisplayItemValue.csproj)
 
-## 其他说明
+注意！如果碰到.csproj下的文件路径无法被识别问题时，可用第三方IDE(VS Code)打开文件，将文件编码从 UTF-8 with BOM改为 UTF-8（无 BOM） 并重新保存，再用 Visual Studio 打开就应该正常了。
+## 其他
 
 ### Unity Package
 

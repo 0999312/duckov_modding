@@ -2,7 +2,7 @@
 
 _This is an example project for modding Escape From Duckov._
 
-[中文](README.md) | English
+[中文](README.md) | English | [한국어](README_KO.md)
 
 [Notable APIs](Documents/NotableAPIs.md)
 
@@ -45,10 +45,12 @@ info.ini may also contain the following parameters:
 1. Have Escape From Duckov installed on your computer.
 2. Create a .NET Class Library project.
 3. Configure project parameters.
+
    1. Target Framework
       - **It is recommended to set TargetFramework to netstandard2.1.**
       - Note: Remove features not supported by TargetFramework, such as `<ImplicitUsings>`
    2. Reference Include
+
       - Add `\Duckov_Data\Managed\*.dll` from Escape From Duckov to the references.
       - Example:
 
@@ -57,7 +59,7 @@ info.ini may also contain the following parameters:
         <Reference Include="$(DuckovPath)\Duckov_Data\Managed\TeamSoda.*" />
         <Reference Include="$(DuckovPath)\Duckov_Data\Managed\ItemStatsSystem.dll" />
         <Reference Include="$(DuckovPath)\Duckov_Data\Managed\Unity*" />
-      </ItemGroup> 
+      </ItemGroup>
       ```
 
 4. Done! Now write a ModBehaviour class in your Mod's Namespace. Build the project to get your mod's main dll.
@@ -67,7 +69,6 @@ csproj File Example: [DisplayItemValue.csproj](DisplayItemValue/DisplayItemValue
 ## Other
 
 ### Unity Package
-
 
 When developing with Unity, you can refer to the [manifest.json file](UnityFiles/manifest.json) included in this repository to select packages.
 
@@ -92,5 +93,3 @@ To aid the long-term development of the Duckov community, we ask everyone to con
 4.Mods must not be used to direct players to advertisements, fundraising, payment requests, or other commercial or unofficial external links.
 5.Mods containing AI-generated content must be clearly labeled.
 For mods published on Steam Workshop, any violations of the above rules may result in removal without prior notice and may lead to suspension of the creator’s permissions.
-
-
