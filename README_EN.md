@@ -87,9 +87,10 @@ When developing with Unity, you can refer to the [manifest.json file](UnityFiles
 ## Duckov Community Rules
 
 To aid the long-term development of the Duckov community, we ask everyone to contribute to a positive creative environment. Please adhere to the following rules:
-1.Content that violates the laws of the regions where the developer team and the Steam platform operate is strictly prohibited, including but not limited to content involving politics, child sexual exploitation, or the promotion of violence or terrorism.
-2.Content that severely insults characters, distorts the story, or aims to cause discomfort, conflict, or controversy in the player community is prohibited. This also includes content related to current events or real-life individuals that may trigger real-world disputes.
-3.Unauthorized use of copyrighted game assets or other third-party materials is prohibited.
-4.Mods must not be used to direct players to advertisements, fundraising, payment requests, or other commercial or unofficial external links.
-5.Mods containing AI-generated content must be clearly labeled.
+1. Content that violates the laws of the regions where the developer team and the Steam platform operate is strictly prohibited, as well as any content involving politics, obscene or pornographic material, or the promotion of violence and terrorism.
+2. Content that severely insults characters, distorts the story, or aims to cause discomfort, conflict, or controversy in the player community is prohibited. This also includes content related to current events or real-life individuals that may trigger real-world disputes.
+3. Unauthorized use of copyrighted game assets or other third-party materials is prohibited.
+4. Mods must not be used to direct players to advertisements, fundraising, payment requests, or other commercial or unofficial external links.
+5. Mods containing AI-generated content must be clearly labeled.
 For mods published on Steam Workshop, any violations of the above rules may result in removal without prior notice and may lead to suspension of the creator’s permissions.
+
