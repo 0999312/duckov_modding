@@ -66,6 +66,7 @@ info.ini 还可能包含以下参数:
 
 csproj 文件示例: [DisplayItemValue.csproj](DisplayItemValue/DisplayItemValue.csproj)
 
+注意！如果碰到.csproj下的文件路径无法被识别问题时，可用第三方IDE(VS Code)打开文件，将文件编码从 UTF-8 with BOM改为 UTF-8（无 BOM） 并重新保存，再用 Visual Studio 打开就应该正常了。
 ## 其他
 
 ### Unity Package
