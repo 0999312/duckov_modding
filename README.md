@@ -6,6 +6,10 @@ _《逃离鸭科夫》的 mod 示例说明。_
 
 [值得注意的 API](Documents/NotableAPIs_CN.md)
 
+## 关于Harmony
+
+游戏目前没有内置 Harmony。观察到同时加载不同版本 Harmony 时会有冲突。可以参考社区中比较流行的 Harmony 来进行开发，比如最新的2.4.1版本。
+
 ## 工作原理概述
 
 《逃离鸭科夫》的 Mod 系统会自动扫描并读取 Duckov_Data/Mods 文件夹，以及从 Steam 创意工坊中订阅的物品文件夹。当扫描发现这些文件夹中包含有特定的 dll 文件、info.ini 和 preview.png 文件，那么就能够在游戏的 Mods 菜单中管理并加载 mod。
