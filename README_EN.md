@@ -5,6 +5,9 @@ _This is an example project for modding Escape From Duckov._
 [中文](README.md) | English | [한국어](README_KO.md)
 
 [Notable APIs](Documents/NotableAPIs.md)
+## About Harmony
+
+The game don't have Harmony library integrated. We noticed that different versions of Harmony library conflicts each other when used in different Mods. Please consider using the most used version of Harmony library in the community, probably the newest 2.4.1 release.
 
 ## Overview
 
