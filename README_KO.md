@@ -6,6 +6,10 @@ _Escape From Duckov 모딩을 위한 예제 프로젝트입니다._
 
 [주요 API 문서](Documents/NotableAPIs.md)
 
+## About Harmony
+
+The game don't have Harmony library integrated. We noticed that different versions of Harmony library conflicts each other when used in different Mods. Please consider using the most used version of Harmony library in the community, probably the newest 2.4.1 release.
+
 ## 개요
 
 Escape From Duckov의 모딩 시스템은 Duckov_Data/Mods 폴더의 하위 폴더와 Steam 창작마당에서 구독한 아이템 폴더를 스캔하고 읽습니다. 모드는 이러한 폴더에 포함된 `dll` 파일, `info.ini`, `preview.png`를 통해 게임에서 표시되고 로드됩니다.
