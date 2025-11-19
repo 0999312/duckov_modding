@@ -41,11 +41,11 @@ info.ini는 다음 매개변수를 포함해야 합니다:
 info.ini는 다음 매개변수를 포함할 수도 있습니다:
 
 - publishedFileId (Steam 창작마당에서 이 모드의 ID를 기록)
-- tags (steam workshop tags)
+- tags (steam workshop tags, separate with comma)
 
 **참고: Steam 창작마당에 업로드할 때 info.ini가 덮어쓰여집니다. 그 결과 info.ini의 원래 정보가 손실될 수 있습니다. 따라서 위의 항목 이외의 정보를 info.ini에 저장하는 것은 권장하지 않습니다.**
 
-#### Possible Tags (separate with comma)
+#### Possible Tags
 - Weapon
 - Equipment & Gear
 - Loot & Economy
