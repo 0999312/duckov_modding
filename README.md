@@ -41,12 +41,12 @@ mod 的 ModBehaviour 类应继承自 **Duckov.Modding.ModBehaviour**，这是一
 - displayName（显示的名称）
 - description（显示的描述）
 - publishedFileId（_可能包含_。本 Mod 在 steam 创意工坊的 id）
-- tags (在创意工坊中显示的Tag)
+- tags (在创意工坊中显示的Tag, 使用逗号分隔)
 
 #### 注意
 在上传 Steam Workshop 的时候，info.ini 会被复写，配置文件中原有的信息可能会因此丢失。所以，**不建议在 info.ini 中记录除以上参数之外的其他数据**。
 
-#### Tags可以使用的参数（用逗号分隔）
+#### Tags可以使用的参数
 
 - Weapon
 - Equipment & Gear
