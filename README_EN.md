@@ -40,7 +40,7 @@ info.ini should contain the following parameters:
 info.ini may also contain the following parameters:
 
 - publishedFileId (records this Mod's ID in the Steam Workshop)
-- tags (The tags displays in the steam workshop web page)
+- tags (The tags displays in the steam workshop web page, separate with comma)
 
 **Note: When uploading to Steam Workshop, info.ini will be overwritten. Original information in info.ini may be lost as a result. Therefore, it is not recommended to store any information other than the above items in info.ini.**
 
