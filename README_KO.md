@@ -6,6 +6,10 @@ _Escape From Duckov 모딩을 위한 예제 프로젝트입니다._
 
 [주요 API 문서](Documents/NotableAPIs.md)
 
+## About Harmony
+
+The game don't have Harmony library integrated. We noticed that different versions of Harmony library conflicts each other when used in different Mods. Please consider using the most used version of Harmony library in the community, probably the newest 2.4.1 release.
+
 ## 개요
 
 Escape From Duckov의 모딩 시스템은 Duckov_Data/Mods 폴더의 하위 폴더와 Steam 창작마당에서 구독한 아이템 폴더를 스캔하고 읽습니다. 모드는 이러한 폴더에 포함된 `dll` 파일, `info.ini`, `preview.png`를 통해 게임에서 표시되고 로드됩니다.
@@ -37,8 +41,25 @@ info.ini는 다음 매개변수를 포함해야 합니다:
 info.ini는 다음 매개변수를 포함할 수도 있습니다:
 
 - publishedFileId (Steam 창작마당에서 이 모드의 ID를 기록)
+- tags (steam workshop tags, separate with comma)
 
 **참고: Steam 창작마당에 업로드할 때 info.ini가 덮어쓰여집니다. 그 결과 info.ini의 원래 정보가 손실될 수 있습니다. 따라서 위의 항목 이외의 정보를 info.ini에 저장하는 것은 권장하지 않습니다.**
+
+#### Possible Tags
+- Weapon
+- Equipment & Gear
+- Loot & Economy
+- Quality of Life
+- Cheats & Exploits
+- Visual Enhancements
+- Sound
+- Quest & Progression
+- Companion & NPC
+- Collectibles
+- Gameplay
+- Multiplayer & Co-op
+- Utility
+- Medical & Survival
 
 ## C# 프로젝트 구성
 

@@ -6,6 +6,10 @@ _《逃离鸭科夫》的 mod 示例说明。_
 
 [值得注意的 API](Documents/NotableAPIs_CN.md)
 
+## 关于Harmony
+
+游戏目前没有内置 Harmony。观察到同时加载不同版本 Harmony 时会有冲突。可以参考社区中比较流行的 Harmony 来进行开发，比如撰写此文时最新的2.4.1版本。
+
 ## 工作原理概述
 
 《逃离鸭科夫》的 Mod 系统会自动扫描并读取 Duckov_Data/Mods 文件夹，以及从 Steam 创意工坊中订阅的物品文件夹。当扫描发现这些文件夹中包含有特定的 dll 文件、info.ini 和 preview.png 文件，那么就能够在游戏的 Mods 菜单中管理并加载 mod。
@@ -37,10 +41,32 @@ mod 的 ModBehaviour 类应继承自 **Duckov.Modding.ModBehaviour**，这是一
 - displayName（显示的名称）
 - description（显示的描述）
 - publishedFileId（_可能包含_。本 Mod 在 steam 创意工坊的 id）
+- tags (在创意工坊中显示的Tag, 使用逗号分隔)
 
 **注意：在上传 Steam Workshop 的时候，会复写 info.ini。配置文件中部分数据可能会因此丢失。所以不建议在 info.ini 中存储除以上项目之外的其他信息。**
 
+#### Tags可以使用的参数
+
+- Weapon
+- Equipment & Gear
+- Loot & Economy
+- Quality of Life
+- Cheats & Exploits
+- Visual Enhancements
+- Sound
+- Quest & Progression
+- Companion & NPC
+- Collectibles
+- Gameplay
+- Multiplayer & Co-op
+- Utility
+- Medical & Survival
+- 
 ## 配置 C# 工程
+
+**注意：在上传 Steam Workshop 的时候，会复写 info.ini。info.ini 中原有的信息可能会因此丢失。所以不建议在 info.ini 中存储除以上项目之外的其他信息。**
+
+## 配置 C# 工程 / Configuring C# Project
 
 1. 在电脑上准备好《逃离鸭科夫》本体。
 2. 通过 Visual Studio 软件创建一个 .Net 类库（Class Library）。

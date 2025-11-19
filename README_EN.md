@@ -5,6 +5,9 @@ _This is an example project for modding Escape From Duckov._
 [中文](README.md) | English | [한국어](README_KO.md)
 
 [Notable APIs](Documents/NotableAPIs.md)
+## About Harmony
+
+The game don't have Harmony library integrated. We noticed that different versions of Harmony library conflicts each other when used in different Mods. Please consider using the most used version of Harmony library in the community, probably the newest 2.4.1 release.
 
 ## Overview
 
@@ -37,8 +40,25 @@ info.ini should contain the following parameters:
 info.ini may also contain the following parameters:
 
 - publishedFileId (records this Mod's ID in the Steam Workshop)
+- tags (The tags displays in the steam workshop web page, separate with comma)
 
 **Note: When uploading to Steam Workshop, info.ini will be overwritten. Original information in info.ini may be lost as a result. Therefore, it is not recommended to store any information other than the above items in info.ini.**
+
+#### Possible Tags
+- Weapon
+- Equipment & Gear
+- Loot & Economy
+- Quality of Life
+- Cheats & Exploits
+- Visual Enhancements
+- Sound
+- Quest & Progression
+- Companion & NPC
+- Collectibles
+- Gameplay
+- Multiplayer & Co-op
+- Utility
+- Medical & Survival
 
 ## Configuring C# Project
 
